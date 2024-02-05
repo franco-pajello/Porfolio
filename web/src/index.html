@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet" />
+  <!--   <link rel="stylesheet" href=" 	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+ -->
+  <link rel="stylesheet" href="/web/src/index.css" />
+</head>
+
+<body>
+  <header id="header">
+    <div class="header_titulo">
+      <h1 class="header_titulo_h1"><i class="fa-solid fa-code"></i></h1>
+    </div>
+    <div class="conteiner-btn-menu">
+      <button class="btn-abrir-menu" id="abrir-menu">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+    </div>
+    <nav class="header_nav" id="nav">
+      <button class="btn-cerrar-menu" id="cerrar-menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <ul class="header_nav_ul">
+        <a href="#main_section_sobre_mi">
+          <li>Sobre mi</li>
+        </a>
+        <a href="#main-proyectos">
+          <li>Proyectos</li>
+        </a>
+        <a href="#main_section_conocimientos">
+          <li>Skill</li>
+        </a>
+        <a href="#main_section_diplomas">
+          <li>Conocimientos</li>
+        </a>
+        <a href="#main_section_contacto">
+          <li>Contacto</li>
+        </a>
+      </ul>
+    </nav>
+    <div class="header_titulo" id="header-logo-2">
+      <h1 class="header_titulo_h1">
+        <i id="header-logo-i" class=""></i>
+      </h1>
+    </div>
+  </header>
+  <main id="main">
+    <section id="main_section_sobre_mi">
+      <div class="container_main_section_sobre_mi">
+        <div class="left_section">
+          <div class="main_section_foto_div"></div>
+          <div class="main_section_icon-contacto">
+            <ul class="icon-contacto-ul-margin">
+              <li class="icon-contacto icon-contacto-margin">
+                <a href="https://www.linkedin.com/in/franco-pajello/" target="_blank">
+                  <button>
+                    <i class="fa-brands fa-linkedin fa-2x"></i><span>Linkedin</span>
+                  </button>
+                </a>
+              </li>
+              <li class="icon-contacto icon-contacto-margin">
+                <a href="https://github.com/franco-pajello" target="_blank">
+                  <button>
+                    <i class="fa-brands fa-square-github fa-2x"></i>
+                    <span>Github</span>
+                  </button>
+                </a>
+              </li>
+              <li class="icon-contacto icon-contacto-margin">
+                <a href="mailto:francopajello@gmail.com">
+                  <button>
+                    <i class="fa-regular fa-paper-plane fa-2x"></i>
+                    <span>Mail</span>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <section id="section_sobre_mi">
+          <div class="main_section_sobre_mi_container">
+            <div class="main_section_sobre_mi_titulo">
+              <h4>Franco Pajello</h4>
+              <h1>FullStack Develoer</h1>
+            </div>
+            <div class="main_section_sobre_mi_div">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
+              quaerat consequuntur quod modi suscipit? Alias non nulla harum
+              earum hic. Sunt optio ad repellendus temporibus molestiae
+              <div class="main_section_sobre_mi_div_btn">
+                <a href="./utils/curriculum-10-2023.pdf" download="curriculum">
+                  <button class="main_section_sobre_mi_btn">
+                    Curriculum
+                    <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <section id="main-proyectos">
+      <h1>Proyectos</h1>
+      <div id="main-container-proyectos"></div>
+    </section>
+    <section id="main_section_conocimientos">
+      <h1 class="main_section_conocimientos_titulo">Skill</h1>
+      <div id="container_main_section_conocimiento">
+        <div id="container_main_section_conocimientos_card"></div>
+      </div>
+    </section>
+    <section id="main_section_diplomas">
+      <h1 class="main_section_diplomas_titulo">Diplomas</h1>
+      <div class="container_main_section_diplomas">
+        <div id="container_main_section_diplomas_card"></div>
+      </div>
+    </section>
+    <section id="main_section_contacto">
+      <h1 class="form__title">Contactame</h1>
+      <div class="container_main_section_contacto">
+        <form class="form contacto" id="Contacto" action="https://formsubmit.co/giulianaraquelpajello@gmail.com"
+          method="POST">
+          <div class="form__container">
+            <div class="form__group">
+              <input type="text" id="Email" class="form__input" name="Email" required placeholder=" " />
+              <label for="Email" class="form__label">Mail</label>
+              <spam class="form__line"></spam>
+            </div>
+            <div class="form__group">
+              <input type="text" id="Asunto" class="form__input" name="Asunto" required placeholder=" " />
+              <label for="Asunto" class="form__label">Asunto</label>
+              <spam class="form__line"></spam>
+            </div>
+            <div class="form__group">
+              <input type="text" id="Mensaje" class="form__input" name="Mensaje" required placeholder=" " />
+              <label for="Mensaje" class="form__label">Mensaje</label>
+              <spam class="form__line"></spam>
+            </div>
+            <button type="submit" class="form__submit">Enviar</button>
+          </div>
+        </form>
+        <div class="main_section_icon-contacto">
+          <ul class="main_section_icon-contacto-footer">
+            <li class="icon-contacto icon-contacto-form">
+              <a href="https://www.linkedin.com/in/franco-pajello/" target="_blank">
+                <button>
+                  <i class="fa-brands fa-linkedin fa-2x"></i><span>Linkedin</span>
+                </button>
+              </a>
+            </li>
+            <li class="icon-contacto icon-contacto-form">
+              <a href="https://github.com/franco-pajello" target="_blank">
+                <button>
+                  <i class="fa-brands fa-square-github fa-2x"></i><span>Github</span>
+                </button>
+              </a>
+            </li>
+            <li class="icon-contacto icon-contacto-form">
+              <a href="mailto:francopajello@gmail.com">
+                <button>
+                  <i class="fa-regular fa-paper-plane fa-2x"></i><span>Mail</span>
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>francopajello</footer>
+  <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+  <script src="https://kit.fontawesome.com/1d5f6d8bfd.js" crossorigin="anonymous"></script>
+  <!--   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+ -->
+  <script src="/web/src/index.js"></script>
+</body>
+
+</html>

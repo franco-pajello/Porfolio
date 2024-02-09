@@ -26,62 +26,62 @@ window.addEventListener("resize", () => {
 });
 const ProyectoHTML = document.getElementById("main-container-proyectos");
 const conocimientos = [
-  { tecnologia: "NODE JS", img: "./asset/img/conocimientos/NODE2.svg " },
-  { tecnologia: "JAVA", img: "./asset/img/conocimientos/java2.svg" },
-  { tecnologia: "JAVASCRIPT", img: "./asset/img/conocimientos/js2.svg " },
-  { tecnologia: "REACT", img: "./asset/img/conocimientos/react2.svg " },
-  { tecnologia: "HTML", img: "./asset/img/conocimientos/HTML2.svg " },
-  { tecnologia: "CSS", img: "./asset/img/conocimientos/CSS2.svg " },
-  { tecnologia: "SASS", img: "./asset/img/conocimientos/SASS2.svg " },
-  { tecnologia: "GIT", img: "./asset/img/conocimientos/GIT2.svg " },
+  { tecnologia: "NODE JS", img: "./web/src/asset/img/conocimientos/NODE2.svg " },
+  { tecnologia: "JAVA", img: "./web/src/asset/img/conocimientos/java2.svg" },
+  { tecnologia: "JAVASCRIPT", img: "./web/src/asset/img/conocimientos/js2.svg " },
+  { tecnologia: "REACT", img: "./web/src/asset/img/conocimientos/react2.svg " },
+  { tecnologia: "HTML", img: "./web/src/asset/img/conocimientos/HTML2.svg " },
+  { tecnologia: "CSS", img: "./web/src/asset/img/conocimientos/CSS2.svg " },
+  { tecnologia: "SASS", img: "./web/src/asset/img/conocimientos/SASS2.svg " },
+  { tecnologia: "GIT", img: "./web/src/asset/img/conocimientos/GIT2.svg " },
   /*   { tecnologia: "EJS", img: "./asset/img/conocimientos/EJS.svg " }, */
-  { tecnologia: "EXPRESS", img: "./asset/img/conocimientos/EXPRESS.svg " },
-  { tecnologia: "POSTMAN", img: "./asset/img/conocimientos/postman2.svg " },
-  { tecnologia: "MONGO DB", img: "./asset/img/conocimientos/MONGO2.svg " },
-  { tecnologia: "SQL", img: "./asset/img/conocimientos/SQL2.png " },
+  { tecnologia: "EXPRESS", img: "./web/src/asset/img/conocimientos/EXPRESS.svg " },
+  { tecnologia: "POSTMAN", img: "./web/src/asset/img/conocimientos/postman2.svg " },
+  { tecnologia: "MONGO DB", img: "./web/src/asset/img/conocimientos/MONGO2.svg " },
+  { tecnologia: "SQL", img: "./web/src/asset/img/conocimientos/SQL2.png " },
 ];
 const diplomas = [
   {
     diploma: "Full Stack Nodejs",
-    img: "./asset/img/diplomas/nodejs.png",
+    img: "./web/src/asset/img/diplomas/nodejs.png",
     url: "https://www.coderhouse.com/certificados/64583960e785bf00029bc3d8?lang=es",
   },
   {
     diploma: "Frontend",
-    img: "./asset/img/diplomas/front.png",
+    img: "./web/src/asset/img/diplomas/front.png",
     url: "https://www.coderhouse.com/certificados/62cb12726771e90024e7932a?lang=es",
   },
   {
     diploma: "Backend",
-    img: "./asset/img/diplomas/backend.png",
+    img: "./web/src/asset/img/diplomas/backend.png",
     url: "https://www.coderhouse.com/certificados/6458395fe785bf00029bc3d6?lang=es",
   },
-  { diploma: "Data analitics", img: "./asset/img/diplomas/data-analitics.png" },
+  { diploma: "Data analitics", img: "./web/src/asset/img/diplomas/data-analitics.png" },
 
   {
     diploma: "Java",
-    img: "./asset/img/diplomas/oracle-java.png",
+    img: "./web/src/asset/img/diplomas/oracle-java.png",
     url: "./asset/img/diplomas/oracle-java.png",
   },
   {
     diploma: "Javascript",
-    img: "./asset/img/diplomas/Javascript.png",
+    img: "./web/src/asset/img/diplomas/Javascript.png",
     url: "https://www.coderhouse.com/certificados/6279914b34529e00192d8edc?lang=es",
   },
   {
     diploma: "React js",
-    img: "./asset/img/diplomas/Reactjs.png",
+    img: "./web/src/asset/img/diplomas/Reactjs.png",
     url: "https://www.coderhouse.com/certificados/62bf5fa246cbeb00190007a8?lang=es",
   },
   {
     diploma: "Desarrollo Web",
-    img: "./asset/img/diplomas/DesarrolloWeb.png",
+    img: "./web/src/asset/img/diplomas/DesarrolloWeb.png",
     url: "https://www.coderhouse.com/certificados/6222075962437f0025dc5291?lang=es",
   },
 ];
 const proyecto = [
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
@@ -99,7 +99,7 @@ const proyecto = [
     ],
   },
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
@@ -117,7 +117,7 @@ const proyecto = [
     ],
   },
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
@@ -135,7 +135,7 @@ const proyecto = [
     ],
   },
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
@@ -153,7 +153,7 @@ const proyecto = [
     ],
   },
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",
@@ -171,7 +171,7 @@ const proyecto = [
     ],
   },
   {
-    img: "./asset/img/foto-cv.jpg",
+    img: "./web/src/asset/img/foto-cv.jpg",
     titulo: "Registro de Reparto",
     descripcion:
       "Some quick example text to build on the card title and make up the bulk of the cards content.",

@@ -36,7 +36,7 @@ const conocimientos = [
   { tecnologia: "GIT", img: "./web/src/asset/img/conocimientos/GIT2.svg " },
   /*   { tecnologia: "EJS", img: "./asset/img/conocimientos/EJS.svg " }, */
   { tecnologia: "EXPRESS", img: "./web/src/asset/img/conocimientos/EXPRESS.svg " },
-  { tecnologia: "POSTMAN", img: "./web/src/asset/img/conocimientos/postman2.svg " },
+  { tecnologia: "POSTMAN", img: "./web/src/asset/img/conocimientos/POSTMAN2.svg " },
   { tecnologia: "MONGO DB", img: "./web/src/asset/img/conocimientos/MONGO2.svg " },
   { tecnologia: "SQL", img: "./web/src/asset/img/conocimientos/SQL2.png " },
 ];

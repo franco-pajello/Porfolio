@@ -65,12 +65,12 @@ const diplomas = [
   },
   {
     diploma: "Javascript",
-    img: "./web/src/asset/img/diplomas/Javascript.png",
+    img: "./web/src/asset/img/diplomas/JavaScript.png",
     url: "https://www.coderhouse.com/certificados/6279914b34529e00192d8edc?lang=es",
   },
   {
     diploma: "React js",
-    img: "./web/src/asset/img/diplomas/Reactjs.png",
+    img: "./web/src/asset/img/diplomas/ReactJs.png",
     url: "https://www.coderhouse.com/certificados/62bf5fa246cbeb00190007a8?lang=es",
   },
   {

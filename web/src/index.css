@@ -125,7 +125,7 @@ h1 {
 }
 
 .main_section_foto_div {
-    background-image: url("/web/src/asset/img/foto-cv.jpg");
+    background-image: url("./asset/img/foto-cv.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     height: 420px;

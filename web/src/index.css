@@ -1381,7 +1381,7 @@ footer {
 
 @media (max-width:320px) {
     #main_section_sobre_mi {
-        height: 95vh;
+        height: 100vh;
     }
 
     #container_main_section_conocimientos_card {

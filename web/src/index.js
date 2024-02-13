@@ -76,7 +76,7 @@ const diplomas = [
   {
     diploma: "Java",
     img: "./web/src/asset/img/diplomas/oracle-java.png",
-    url: "./asset/img/diplomas/oracle-java.png",
+    url: "./web/src/asset/img/diplomas/oracle-java.png",
   },
   {
     diploma: "Javascript",

@@ -1380,6 +1380,10 @@ footer {
 }
 
 @media (max-width:320px) {
+    #header {
+        height: 40px;
+    }
+
     #main_section_sobre_mi {
         height: 100vh;
     }

@@ -24,20 +24,35 @@ window.addEventListener("resize", () => {
     : (logo.classList.add("fa-solid", "fa-code"),
       logo.classList.remove("oculto"));
 });
-const ProyectoHTML = document.getElementById("main-container-proyectos");
+const ProyectoHTML = document.getElementById("container-proyectos");
 const conocimientos = [
-  { tecnologia: "NODE JS", img: "./web/src/asset/img/conocimientos/NODE2.svg " },
+  {
+    tecnologia: "NODE JS",
+    img: "./web/src/asset/img/conocimientos/NODE2.svg ",
+  },
   { tecnologia: "JAVA", img: "./web/src/asset/img/conocimientos/java2.svg" },
-  { tecnologia: "JAVASCRIPT", img: "./web/src/asset/img/conocimientos/js2.svg " },
+  {
+    tecnologia: "JAVASCRIPT",
+    img: "./web/src/asset/img/conocimientos/js2.svg ",
+  },
   { tecnologia: "REACT", img: "./web/src/asset/img/conocimientos/react2.svg " },
   { tecnologia: "HTML", img: "./web/src/asset/img/conocimientos/HTML2.svg " },
   { tecnologia: "CSS", img: "./web/src/asset/img/conocimientos/CSS2.svg " },
   { tecnologia: "SASS", img: "./web/src/asset/img/conocimientos/SASS2.svg " },
   { tecnologia: "GIT", img: "./web/src/asset/img/conocimientos/GIT2.svg " },
   /*   { tecnologia: "EJS", img: "./asset/img/conocimientos/EJS.svg " }, */
-  { tecnologia: "EXPRESS", img: "./web/src/asset/img/conocimientos/EXPRESS.svg " },
-  { tecnologia: "POSTMAN", img: "./web/src/asset/img/conocimientos/POSTMAN2.svg " },
-  { tecnologia: "MONGO DB", img: "./web/src/asset/img/conocimientos/MONGO2.svg " },
+  {
+    tecnologia: "EXPRESS",
+    img: "./web/src/asset/img/conocimientos/EXPRESS.svg ",
+  },
+  {
+    tecnologia: "POSTMAN",
+    img: "./web/src/asset/img/conocimientos/POSTMAN2.svg ",
+  },
+  {
+    tecnologia: "MONGO DB",
+    img: "./web/src/asset/img/conocimientos/MONGO2.svg ",
+  },
   { tecnologia: "SQL", img: "./web/src/asset/img/conocimientos/SQL2.png " },
 ];
 const diplomas = [
@@ -56,7 +71,7 @@ const diplomas = [
     img: "./web/src/asset/img/diplomas/backend.png",
     url: "https://www.coderhouse.com/certificados/6458395fe785bf00029bc3d6?lang=es",
   },
-  { diploma: "Data analitics", img: "./web/src/asset/img/diplomas/data-analitics.png" },
+  /*   { diploma: "Data analitics", img: "./web/src/asset/img/diplomas/data-analitics.png" }, */
 
   {
     diploma: "Java",

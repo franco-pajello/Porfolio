@@ -6,6 +6,7 @@
 
 section {
     height: 100vh;
+    margin: 0 0 20px 0;
 }
 
 html {
@@ -19,7 +20,6 @@ body {
     color: #FAF9F6;
     max-width: 60%;
     margin: 0 auto;
-    /*    position: relative; */
 }
 
 h1 {
@@ -32,7 +32,6 @@ h1 {
     position: fixed;
     display: flex;
     width: 60%;
-    /*  justify-content: space-between; */
     background-color: #1d2835;
     margin: 0 auto;
     height: 60px;
@@ -96,7 +95,7 @@ h1 {
 
 /* ------------- SOBRE MI ---------------- */
 #main_section_sobre_mi {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -140,8 +139,6 @@ h1 {
     font-family: 'Roboto', sans-serif;
     margin-top: 15px;
     font-weight: normal;
-    /*     padding: 10px;
- */
 }
 
 #section_sobre_mi {
@@ -162,7 +159,6 @@ h1 {
 }
 
 .main_section_sobre_mi_btn {
-    /*    border: 2px solid #FAF9F6; */
     cursor: pointer;
     background-color: transparent;
     border: 1px solid #2b2b2b;
@@ -195,9 +191,7 @@ h1 {
 }
 
 /* ---------------- ICONS CONTACTO --------- */
-.main_section_icon-contacto {
-    margin-top: 40px;
-}
+
 
 .main_section_icon-contacto ul {
     display: flex;
@@ -290,11 +284,7 @@ h1 {
     min-height: 50vh;
 }
 
-#main-proyectos h1 {
-    margin-bottom: 20px;
-}
-
-#main-container-proyectos {
+#container-proyectos {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -306,7 +296,7 @@ h1 {
     min-width: 565x;
     max-width: 565px;
     height: 250px;
-    margin: 0 0 30px 0;
+    margin: 30px 0 0 0;
     border: 1px solid #2b2b2b;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -337,7 +327,7 @@ h1 {
     margin-top: 5px;
 }
 
-/* ------------- SKIN ---------------- */
+/* ------------- SKILL ---------------- */
 #main_section_conocimientos {
     height: auto;
     min-height: 40vh;
@@ -348,28 +338,22 @@ h1 {
 }
 
 #container_main_section_conocimiento {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 40vh;
+    display: flex;
 }
 
 #container_main_section_conocimientos_card {
     display: flex;
     flex-wrap: wrap;
-    height: 30vh;
-    /*     justify-content: space-between; */
+    min-height: 30vh;
+    width: 100%;
+    height: auto;
     align-items: center;
 }
 
 .container_main_section_conocimientos_card-div {
     height: auto;
-    /*     margin-right: 90px; */
 }
-
-/* .container_main_section_conocimientos_card-div:nth-child(6n) {
-    margin-right: 0;
-} */
 
 .tecnologias_img {
     width: 100px;
@@ -391,18 +375,14 @@ h1 {
 
 .container_main_section_diplomas {
     min-height: 65vh;
-    height: auto;
-    display: flex;
     width: 100%;
-    margin: 15px 0 15px 0;
-    align-items: center;
-    justify-content: center;
 }
 
 #container_main_section_diplomas_card {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    align-items: center;
 }
 
 .diplomas-wd {
@@ -485,7 +465,6 @@ h1 {
 
 .form__title {
     font-size: 2rem;
-    margin-bottom: .5em;
     color: #FAFAFA;
     text-align: left;
 }
@@ -543,7 +522,6 @@ h1 {
     font-family: var(--tipo-form);
     font-weight: 300;
     font-size: 1rem;
-    /*     padding: .8em 0; */
     border: none;
     border-radius: .5em;
     cursor: pointer;
@@ -586,17 +564,35 @@ footer {
     height: 5vh;
     background-color: transparent;
     width: 90%;
-    /*   margin: auto; */
 }
 
 /* ---------------------------------------------------------------- */
 
+
 @media (min-width:2560px) {
+
+    /* ///////////// sobre mi /////////// */
     #main_section_sobre_mi {
-        height: 90vh;
+        height: 65vh;
     }
 
-    #main-container-proyectos {
+    #section_sobre_mi {
+        height: auto;
+    }
+
+    /* /////////// proyectos ////////// */
+    #main-proyectos {
+        height: 50vh;
+        min-height: 20vh;
+    }
+
+    .main-container-proyectos {
+        display: flex;
+        height: 30vh;
+        align-items: center;
+    }
+
+    #container-proyectos {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
@@ -614,6 +610,7 @@ footer {
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
 
+    /*  ///////////////// conocimientos ///////////// */
     #main_section_conocimientos {
         height: auto;
         min-height: 50vh;
@@ -623,9 +620,12 @@ footer {
         width: 153px;
     }
 
+    /* //////////////////// diplomas //////////// */
     .container_main_section_diplomas {
-        min-height: 85vh;
+        min-height: 65vh;
         height: auto;
+        display: flex;
+        align-items: center;
 
     }
 
@@ -639,26 +639,48 @@ footer {
     }
 }
 
-@media (min-width:1400px) and (max-width: 2559px) {
+@media (min-width:1440px) and (max-width: 2559px) {
 
-    #main-container-proyectos {
+    /* //////////// sobre mi //////// */
+    #main_section_sobre_mi {
+        height: 60vh;
+    }
+
+    #section_sobre_mi {
+        height: auto;
+    }
+
+    .main_section_foto_div {
+        height: 222px;
+        width: 185px;
+    }
+
+    .icon-contacto-ul-margin {
+        margin: 0
+    }
+
+    .main_section_sobre_mi_div_btn {
+        margin: 16px 0 0 0;
+    }
+
+    .main_section_sobre_mi_btn {
+        padding: 6px 22px;
+    }
+
+    /* //////////// proyectos //////// */
+    #container-proyectos {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-        /*         justify-content: space-around;
- */
         justify-content: space-between;
 
     }
 
     .main-proyectos-card {
         display: flex;
-        /*         min-width: 400px;
-        max-width: 415px; */
+        max-width: 415px;
         max-width: 49%;
         height: 250px;
-        /*         margin: 0 15px 15px 0;
- */
         border: 1px solid #2b2b2b;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -669,18 +691,32 @@ footer {
     }
 
     .icon-proyecto {
-        /*         width: 90px;*/
         width: 90px;
-
         margin-left: 0;
+    }
+
+    /* //////////// skill //////// */
+
+    #main_section_conocimientos {
+        min-height: 50vh;
+    }
+
+    #container_main_section_conocimiento {
+        height: 50vh;
     }
 
     .tecnologias_img {
         width: 96px;
     }
 
+    /* //////////// diplomas //////// */
+    #main_section_diplomas {
+        min-height: 55vh;
+        height: auto;
+    }
+
     .container_main_section_diplomas {
-        min-height: 85vh;
+        min-height: 50vh;
         height: auto;
 
     }
@@ -698,7 +734,9 @@ footer {
     }
 }
 
-@media (min-width:1025px) and (max-width: 1399px) {
+@media (min-width:1024px) and (max-width: 1439px) {
+
+    /* /////// HEADER ////////// */
     #header .header_nav {
         display: flex;
         align-items: center;
@@ -709,6 +747,8 @@ footer {
     .header_nav_ul a {
         width: auto;
     }
+
+    /* /////// SOBRE MI ////////// */
 
     #main_section_sobre_mi {
         height: 100vh;
@@ -753,7 +793,9 @@ footer {
         height: 30vh;
     }
 
-    #main-container-proyectos {
+    /* /////// PROYECTOS ////////// */
+
+    #container-proyectos {
         justify-content: center;
     }
 
@@ -761,12 +803,19 @@ footer {
         max-width: 100%;
     }
 
+    /* /////// SKILL ////////// */
+
     .tecnologias_img {
         width: 102px;
     }
 
+    /* /////// DIPLOMAS ////////// */
+    #container_main_section_diplomas_card {
+        justify-content: space-between;
+    }
+
     .diplomas-wd {
-        width: 204px;
+        width: 194px;
     }
 
     .diplomas_img {
@@ -774,74 +823,20 @@ footer {
         height: 160px;
         max-height: 260px;
     }
+
+    /* /////// FOOTER ////////// */
 
     .main_section_icon-contacto-footer {
         flex-direction: row !important;
     }
 }
 
-@media (min-width:768px) and (max-width: 1024px) {
+@media (min-width:768px) and (max-width: 1023px) {
     main {
         padding-top: 60px;
     }
 
-    #main_section_sobre_mi {
-
-        height: auto;
-        display: flex;
-        align-items: center;
-    }
-
-    .container_main_section_sobre_mi {
-        flex-direction: column;
-    }
-
-    #section_sobre_mi {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        font-size: 20px;
-        height: auto;
-    }
-
-    .main-proyectos-card-body {
-        width: 206px;
-        padding: 10px;
-        min-height: 205px;
-    }
-
-    .icon-proyecto {
-        width: 90px;
-        margin-left: 5px;
-    }
-
-    /* ////////// conocimiento /////////// */
-    #container_main_section_conocimiento {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-
-    #container_main_section_conocimientos_card {
-        height: 80vh;
-        justify-content: space-between;
-    }
-
-    .diplomas-wd {
-        width: 50%;
-    }
-
-    .diplomas_img {
-        width: 380px;
-        height: 160px;
-        max-height: 260px;
-    }
-
-}
-
-@media (max-width:1024px) {
+    /* ///////// header/////////// */
 
     #header {
         width: 60%;
@@ -903,48 +898,158 @@ footer {
         padding: .8rem;
     }
 
+    /* ///////////// sobre mi ////////////// */
+    #main_section_sobre_mi {
+
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    .container_main_section_sobre_mi {
+        flex-direction: column;
+    }
+
+    #section_sobre_mi {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 20px;
+        height: auto;
+    }
+
+    .main-proyectos-card-body {
+        width: 206px;
+        padding: 10px;
+        min-height: 205px;
+    }
+
+    .icon-proyecto {
+        width: 90px;
+        margin-left: 5px;
+    }
+
+    /* /////////////////  proyectos /////////////// */
     .main-proyectos-card img {
         width: 50%;
     }
 
     .container-body {
         width: 100%;
-        /*         width: 50%;
- */
-    }
-
-    #container_main_section_diplomas_card {
-
-        justify-content: space-between;
     }
 
     .main-proyectos-card {
         min-width: 100%;
     }
 
+    /* ////////// skill /////////// */
+    #container_main_section_conocimiento {
+        height: auto;
+        min-height: 55vh;
+    }
+
+    #container_main_section_conocimientos_card {
+        height: auto;
+        justify-content: space-between;
+    }
+
+    /* /////////////// diplomas ////////////// */
+    #container_main_section_diplomas_card {
+        justify-content: space-between;
+    }
+
     .diplomas-wd {
-        width: 49%;
+        width: 195px;
     }
 
     .diplomas_container_img {
-
         margin: 0;
     }
 
     .diplomas_img {
         width: 380px;
-        height: 200px;
+        height: auto;
+        min-height: 180px;
     }
 
 }
 
-@media (max-width:767px) {
+@media (min-width:426px) and (max-width:767px) {
+    /* ///////// header/////////// */
+
+    #header {
+        width: 60%;
+    }
+
+    .conteiner-btn-menu {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #header-logo-2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .btn-abrir-menu,
+    .btn-cerrar-menu {
+        display: block;
+    }
+
+    #header .header_nav {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        position: fixed;
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+        width: auto;
+        background-color: #1d2835;
+        width: 200px;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .3);
+    }
+
+    #header .header_nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #header .btn-abrir-menu.visible {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #header .header_nav_ul {
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        text-align: end;
+    }
+
+    #header .header_nav_ul a {
+        padding: .8rem;
+    }
+
+    .btn-cerrar-menu {
+        padding: .8rem;
+    }
 
     /* //////////////// SOBRE MI ///////////// */
+    #main_section_sobre_mi {
+        height: 75vh;
+
+    }
+
     .container_main_section_sobre_mi {
 
         flex-direction: column;
-        margin-top: 30px;
+        height: 100%;
+        justify-content: end;
+
     }
 
     .left_section {
@@ -953,8 +1058,8 @@ footer {
     }
 
     .main_section_foto_div {
-        height: 217px;
-        width: 180px;
+        height: 200px;
+        width: 166px;
     }
 
     .main_section_icon-contacto {
@@ -968,13 +1073,14 @@ footer {
 
     .icon-contacto-ul-margin {
         margin: 0;
+        justify-content: space-between;
     }
 
     #section_sobre_mi {
         display: block;
         width: 100%;
         height: auto;
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .main_section_sobre_mi_titulo h1 {
@@ -998,26 +1104,28 @@ footer {
     }
 
     .main-proyectos-card img {
-        width: 16rem;
+        width: auto;
     }
 
     /*///////////////  skill //////////////////// */
 
     #main_section_conocimientos {
-        height: 100vh;
+        height: 70vh;
 
     }
 
-    #container_main_section_conocimientos_card {
+    #container_main_section_conocimiento {
+        height: 60vh;
+    }
 
+    #container_main_section_conocimientos_card {
+        height: auto;
         justify-content: space-between;
     }
 
     /*///////////////  diplomas //////////////////// */
-    .diplomas-wd {
-        width: 255px;
-        transition: transform 1s;
-    }
+
+
 
     /*///////////////  contacto //////////////////// */
     #main_section_contacto {
@@ -1046,24 +1154,125 @@ footer {
 
 }
 
-@media (max-width:320px) {
+@media (max-width:425px) {
 
-    /* /////////////// header ///////////// */
-    .container_main_section_sobre_mi {
-        margin-top: 160px;
+    #header {
+        width: 60%;
+    }
+
+    .conteiner-btn-menu {
+        width: 100%;
+        display: flex;
+        justify-content: right;
+    }
+
+    #header-logo-2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .btn-abrir-menu,
+    .btn-cerrar-menu {
+        display: block;
     }
 
     #header .header_nav {
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        position: fixed;
+        flex-direction: column;
+        align-items: end;
+        top: 0;
+        right: 0;
+        width: auto;
+        background-color: #1d2835;
         width: 156px;
+        box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .3);
+    }
+
+    #header .header_nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #header .btn-abrir-menu.visible {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    #header .header_nav_ul {
+        height: 100vh;
+        flex-direction: column;
+        width: 100%;
+        text-align: end;
+    }
+
+    #header .header_nav_ul a {
+        padding: .8rem;
+    }
+
+    .btn-cerrar-menu {
+        padding: .8rem;
     }
 
     /* ////////////// sobre mi ////////// */
-    .main_section_sobre_mi_titulo h1 {
-        font-size: 1.4rem;
+    #main_section_sobre_mi {
+        height: 90vh;
+
+    }
+
+    .container_main_section_sobre_mi {
+
+        flex-direction: column;
+        height: 100%;
+        justify-content: end;
+
+    }
+
+    .left_section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .main_section_foto_div {
+        height: 200px;
+        width: 166px;
+    }
+
+    .main_section_icon-contacto {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .main_section_icon-contacto ul {
+        width: 100%;
     }
 
     .icon-contacto-ul-margin {
+        margin: 0;
+        justify-content: space-between;
         flex-direction: column;
+    }
+
+    #section_sobre_mi {
+        display: block;
+        width: 100%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .main_section_sobre_mi_div_btn {
+        margin: 13px 0 0 0;
+    }
+
+    .icon-contacto-margin {
+        margin: 3px;
+    }
+
+
+    .main_section_sobre_mi_titulo h1 {
+        font-size: 1.4rem;
     }
 
     .icon-contacto {
@@ -1087,12 +1296,22 @@ footer {
     }
 
     /* ////////////// proyectos ///////////// */
+    .main-proyectos-card {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
     .main-proyectos-card img {
-        width: 12rem;
+        width: 100%;
     }
 
     .container-body {
-        width: 192px;
+        width: 100%;
+    }
+
+    .main_section_proyecto_icon-contacto ul {
+        justify-content: space-between;
     }
 
     .icon-proyecto {
@@ -1100,24 +1319,39 @@ footer {
     }
 
     /* /////////// skin /////////// */
+    #container_main_section_conocimiento {
+        height: auto;
+    }
+
+    #container_main_section_conocimientos_card {
+        justify-content: space-between;
+    }
 
     .tecnologias_img {
         width: 96px;
     }
 
+    /* ///////////// diplomas ////////// */
+    #main_section_conocimientos {
+        height: auto;
+    }
+
+    #container_main_section_diplomas_card {
+        flex-direction: column;
+    }
+
+    .diplomas-wd {
+        width: 100%;
+    }
+
     /* ////////////contacto////////// */
     #main_section_contacto {
-        height: 45vh;
+        height: 55vh;
     }
 
     .container_main_section_contacto {
 
         justify-content: start;
-    }
-
-    .form__container {
-        margin-top: 0;
-
     }
 
     .main_section_icon-contacto-footer {
@@ -1128,4 +1362,29 @@ footer {
         margin-left: 0;
     }
 
+    /*///////////////  form //////////////////// */
+    .form__container {
+        margin-top: 3em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .form__group {
+        width: 100%;
+    }
+
+    .form__submit {
+        width: 100%;
+    }
+}
+
+@media (max-width:320px) {
+    #main_section_sobre_mi {
+        height: 95vh;
+    }
+
+    #container_main_section_conocimientos_card {
+        justify-content: center;
+    }
 }

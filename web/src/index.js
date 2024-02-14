@@ -306,10 +306,14 @@ function Proyectos(proyecto) {
 abrirMenu.addEventListener("click", () => {
   nav.classList.add("visible");
   abrirMenu.classList.add("visible");
+  let elemento = document.querySelector('.main_section_sobre_mi_btn');
+  elemento.style.zIndex = "0";
 });
 cerrarMenu.addEventListener("click", () => {
   nav.classList.remove("visible");
   abrirMenu.classList.remove("visible");
+  let elemento = document.querySelector('.main_section_sobre_mi_btn');
+  elemento.style.zIndex = "10";
 });
 conocimientosCard(conocimientos);
 diplomasCard(diplomas);
